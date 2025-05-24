@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-      <div className='text-3xl underline'> Hello Dear ! Kuchh badhiya Banyenge!</div>
+      <div className='text-3xl underline'> Hello Dear ! Kuchh badhiya Banayenge!</div>
     </>
   )
 }

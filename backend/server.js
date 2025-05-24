@@ -2,6 +2,7 @@ import sql_db from "./db/sql.js";
 import mongo_db from "./db/mongo.js";
 import express from "express";
 import dotenv from "dotenv";
+import router from "./routes/auth.route.js";
 
 dotenv.config();
 
@@ -22,3 +23,5 @@ console.log("MYSQL database is connected!");
 
 mongo_db;
 console.log("MongoDB database is connected!");
+
+app.use("/", router);

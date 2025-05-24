@@ -10,6 +10,4 @@ const sql_db = await mysql.createConnection({
     database: process.env.SQL_DATABASE_NAME
 })
 
-console.log(await sql_db.execute(`SHOW DATABASES`));
-
 export default sql_db;
