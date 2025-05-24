@@ -31,7 +31,7 @@ export const login = async ( req , res ) => {
     const { email , password } = req.body;
     try {
         if ( !email || !password ) {
-            return res
+            return res.status
         }
 
         const newPassword = await bcrypt.hash( password , salt );
